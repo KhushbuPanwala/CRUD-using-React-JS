@@ -1,0 +1,81 @@
+For Crud Api Call: 
+	Axios is a library that helps us make http requests to external resources. In our React applications we 
+	often need to retrieve data from external APIs so it can be displayed in our web pages. One way to build 
+	this feature is to use the Javascript Fetch API.
+ 
+https://www.npmjs.com/package/react-axios
+
+Sample Project
+https://www.c-sharpcorner.com/article/crud-operations-in-reactjs-with-axios-using-web-api-and-sql-server/
+
+Steps : Open ClientApp folder in your application 
+ 1. npm install react-axios
+ 2. npm install axios
+ 3. npm install react
+ 4. npm install prop-types
+ 
+ After installing above package
+ 1. import axios from 'axios';
+
+ Api Calling Syntax
+ 
+ 1) GetAllDetail ---> For list page
+  getUserDetails() {
+        axios.get('api/UserDetail/getUserDetails').then(response => response.data).then(
+            (result) => {
+				//set your code
+                this.setState({
+                    users: result
+                });
+            },
+            (error) => {
+                this.setState({ error });
+            }
+        )
+    }
+ 
+ 2) GetDetailById  ---> Edit Purpose
+ 
+   getUserDetailsById = id => {
+        axios.get('api/UserDetail/getUserDetailsById/' + Number(id)).then(result => {
+			//set your code
+        },
+            (error) => {
+                this.setState({ error });
+            }
+        )
+
+    }
+	
+ 3)	DeleteItem ---> Delete Purpose
+  deleteUser(id) {
+        axios.delete('api/UserDetail/DeleteUserDetails/' + Number(id)).then(result => {
+            alert(result.data);
+            if (result.data) {
+                this.getUserDetails();
+            }
+            //this.setState({
+            //    response: result,
+            //    users: users.filter(user => user.UserId !== userId)
+            //});
+        });
+    }
+	
+ 4) Post data ---> Add 	Purpose
+   axios.post('api/UserDetail/AddUserDetail/', qs.stringify({ userDetail: userDetail })).then(result => {
+            alert(result.data);
+            this.setState({
+                response: result,
+            })
+        });
+		
+	Note: Pass data with stringify 	
+
+ 5)  Put data ---> Update data
+   axios.put('api/UserDetail/UpdateUserDetail/', qs.stringify({ userDetail: userDetail })).then(result => {
+            alert(result.data);
+            this.setState({
+                response: result,
+            })
+        });
+	

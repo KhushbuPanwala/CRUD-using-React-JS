@@ -1,0 +1,103 @@
+Steps to Create New Site
+1. Open commend prompt
+2. Choose you path 
+3.  Create react application 
+		npx create-react-app my-app
+4. Run application 
+	npm start		
+5. Remove all file from Src folder
+	cd my-app
+	cd src
+
+	# If you're using a Mac or Linux:
+	rm -f *
+
+	# Or, if you're on Windows:
+	del *
+
+	# Then, switch back to the project folder
+	cd ..
+	
+6. Add a file named index.css in the src/ folder.
+7. Add a file named index.js in the src/ folder.
+8. Add these three lines to the top of index.js:
+	import React from 'react';
+	import ReactDOM from 'react-dom';
+	import './index.css';
+	
+Integrate Material with React
+Steps: 
+	1. Open clientApp folder and install material-ui and icon 
+		npm install @material-ui/core
+		npm install @material-ui/icons
+	2. Add references for font and material icon in clientApp-> public-> index.html file
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /> 	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	
+Material Table
+	npm install material-table --save
+	
+	https://material-table.com/#/docs/install
+	
+react-confirm-alert
+	https://www.npmjs.com/package/react-confirm-alert
+	npm install react-confirm-alert --save
+	
+react-alert	
+	https://www.npmjs.com/package/react-alert	
+	npm install --save react-alert
+	
+react-image-carousel	
+	https://www.npmjs.com/package/react-image-carousel
+	npm i react-image-carousel
+	
+Routing from One Page to another page on button click 	
+	this.props.history.push('user');
+Routing from One Page to another page with parameter/ query string on button click 	 	
+    this.props.history.push('add-user/' + id);
+In App.js file
+  <Route path='/add-user/:id' component={AddUser} />
+Get value from Query String
+	this.props.match.params.id	
+	
+	
+Reference Links
+
+React-bootstrap
+	npm i react-bootstrap	
+	https://www.npmjs.com/package/react-bootstrap
+	
+Material with React
+	https://material-ui.com/getting-started/installation/
+	https://reactgo.com/material-ui-react-tutorial/   
+	https://material-ui.com/getting-started/installation/ 
+	https://www.devglan.com/react-js/reactjs-material-ui-example
+	
+Drop down /select
+	https://codesandbox.io/s/425lm2479	
+
+Toaster 	
+	npm i react-toasts
+	https://www.npmjs.com/package/react-toasts
+	
+	https://www.npmjs.com/package/react-toastify
+
+react-sort-search-table
+	npm i react-sort-search-table
+	https://www.npmjs.com/package/react-sort-search-table
+	
+react-loader-spinner
+	npm i react-loader-spinner
+	https://www.npmjs.com/package/react-loader-spinner
+
+	
+Zoom image 	
+npm i react-image-magnify
+https://www.npmjs.com/package/react-image-magnify#example-project
+
+https://www.npmjs.com/package/react-axios
+https://codepen.io/alligatorio/pen/aYzMKL?editors=0110
+https://reactjsexample.com/tag/ui/
+https://www.c-sharpcorner.com/article/crud-operations-in-reactjs-with-axios-using-web-api-and-sql-server/
+
+
