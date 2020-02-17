@@ -1,0 +1,39 @@
+﻿/*html, body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+#page-numbers {
+    list-style: none;
+    display: flex;
+}
+
+    #page-numbers > li {
+        margin-right: 0.3em;
+        color: blue;
+        user-select: none;
+        cursor: pointer;
+    }*/
+/*html, body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.1em;
+}*/
+
+.pagination {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+    .pagination > li {
+        cursor: pointer;
+        color: #c39406;
+    }
+
+        .pagination > li a {
+            color: #c39406;
+            padding: 8px;
+            text-decoration: none;
+        }

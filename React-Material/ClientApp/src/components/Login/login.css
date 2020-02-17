@@ -1,0 +1,16 @@
+﻿form {
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.bg-style {
+    background-image: url("../images/Login-Background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}

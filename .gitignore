@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/BusinessEntity/bin/Debug/netcoreapp2.2
+/BusinessEntity/obj
+/BusinessLogic/bin/Debug/netcoreapp2.2
+/BusinessLogic/obj
